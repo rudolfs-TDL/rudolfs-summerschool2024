@@ -1,1 +1,1 @@
-# rudolfs-summerschool2024
+# Rudolfs summer school
