@@ -15,6 +15,6 @@
 // console.log(number || anotherNumber); // OR
 // console.log(!anotherNumber); // NOT
 
-let isSunny = false;
-const WEATHER_MESSAGE = isSunny ? "Grab your sunglasses!" : "Stay home!";
-console.log(WEATHER_MESSAGE);
+let isSunny = false
+const WEATHER_MESSAGE = isSunny ? 'Grab your sunglasses!' : 'Stay home!'
+console.log(WEATHER_MESSAGE)

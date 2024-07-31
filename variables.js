@@ -1,11 +1,11 @@
-let isActive = true;
+let isActive = true
 
-console.log(!isActive);
+console.log(!isActive)
 
-let undefinedVariable = undefined;
-let someVariableName = "this is a string";
-let camelCase = "someCamelCase";
+let undefinedVariable = undefined
+let someVariableName = 'this is a string'
+let camelCase = 'someCamelCase'
 
-const MON = "MONDAY";
+const MON = 'MONDAY'
 
-console.log(undefined);
+console.log(undefined)

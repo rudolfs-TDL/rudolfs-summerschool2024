@@ -1,23 +1,23 @@
 class Person {
-  constructor(name, surname, age, job, isSleeping) {
-    this.name = name;
-    this.surname = surname;
-    this.age = age;
-    this.job = job;
-    this.isSleeping = isSleeping;
-  }
+    constructor(name, surname, age, job, isSleeping) {
+        this.name = name
+        this.surname = surname
+        this.age = age
+        this.job = job
+        this.isSleeping = isSleeping
+    }
 
-  sleeping() {
-    return (this.isSleeping = true);
-  }
+    sleeping() {
+        return (this.isSleeping = true)
+    }
 
-  calcAge() {
-    return 2024 - this.age;
-  }
+    calcAge() {
+        return 2024 - this.age
+    }
 
-  introduce() {
-    console.log(`Hi, my name is ${this.name}`);
-  }
+    introduce() {
+        console.log(`Hi, my name is ${this.name}`)
+    }
 }
 
-module.exports = Person;
+module.exports = Person
