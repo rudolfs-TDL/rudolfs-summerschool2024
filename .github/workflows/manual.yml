@@ -9,7 +9,7 @@ jobs:
       - name: Run all Cypress tests
         uses: cypress-io/github-action@v6.5.0
         env: 
-          CYPRESS_password: ${{secrets.CYPRESS_PASSWORD}}
+          CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
         with:
           install: true
           command: npm run cypress-run
