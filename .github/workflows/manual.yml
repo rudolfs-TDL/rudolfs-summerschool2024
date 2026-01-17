@@ -1,23 +1,23 @@
 name: Manual workflow
 on: [push, workflow_dispatch]
 jobs:
-  cypress-run:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4.1.7
-      - name: Run all Cypress tests
-        uses: cypress-io/github-action@v6.5.0
-        env: 
-          CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
-        with:
-          install: true
-          command: npm run cypress-run
-      - name: Upload report & screenshots
-        uses: actions/upload-artifact@v4.3.4
-        if: always()
-        with:
-          name: report
-          path: |
-            ./cypress/screenshots
-            ./mochawesome-report
+    cypress-run:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4.1.7
+            - name: Run all Cypress tests
+              uses: cypress-io/github-action@v6.5.0
+              env:
+                  CYPRESS_password: ${{ secrets.CYPRESS_PASSWORD }}
+              with:
+                  install: true
+                  command: npm run cypress-run
+            - name: Upload report & screenshots
+              uses: actions/upload-artifact@v4.3.4
+              if: always()
+              with:
+                  name: report
+                  path: |
+                      ./cypress/screenshots
+                      ./mochawesome-report

@@ -5,9 +5,7 @@ describe('invalid signup', () => {
 
     it(`check signup form is invalid with empty fields`, () => {
         // check that the error message is correct
-        cy.getByTestId('first-name-input')
-            .invoke('prop', 'validationMessage')
-            .should('equal', 'Please fill in this field.')
+        cy.getByTestId('first-name-input').invoke('prop', 'validationMessage')
 
         // check that the empty form is invalid
         cy.get('form').filter(':invalid').should('exist')

@@ -5,8 +5,8 @@
     "main": "comments.js",
     "scripts": {
         "format": "npx prettier . --write",
-        "cypress-open": "npx cypress open",
-        "cypress-run": "npx cypress run",
+        "cy:open": "npx cypress open",
+        "cy:run": "npx cypress run",
         "reports-cleanup": "rm -r ./mochawesome-report"
     },
     "keywords": [
@@ -15,8 +15,9 @@
     ],
     "author": "Rudolfs Blaumanis",
     "license": "ISC",
-    "dependencies": {
-        "cypress": "^13.13.1",
+    "dependencies": {},
+    "devDependencies": {
+        "cypress": "^15.9.0",
         "mochawesome": "^7.1.3",
         "prettier": "^3.3.3"
     }

@@ -1,8 +1,7 @@
-import Global from '../../pageElements/Global'
-import Checkout from '../../pageElements/Checkout'
-import Product from '../../pageElements/Product'
+import Global from '../pageElements/Global'
+import Checkout from '../pageElements/Checkout'
+import Product from '../pageElements/Product'
 
-// https://tdlschool.atlassian.net/browse/TSS22N-5
 describe('End-to-end user flow', () => {
     const USERNAME = Cypress.env('username')
     const PASSWORD = Cypress.env('password')
@@ -12,7 +11,6 @@ describe('End-to-end user flow', () => {
         cy.visit('/')
     })
 
-    // https://tdlschool.atlassian.net/browse/TSS22N-6
     it('selects Sweatpants product from store page', () => {
         Global.navigateSideBar.openPage('Store')
         cy.getByHref('/us/products/sweatpants').click()
